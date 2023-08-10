@@ -1,6 +1,6 @@
 *{
     text-align: left;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     
 }
 
@@ -8,7 +8,7 @@ h1,h2 {
     text-align: center;
     color: white;
 }
-p,label{
+p,label,ul{
     color: white;
 }
 
@@ -22,6 +22,7 @@ body {
 
 button{
     color: black;
+    /* align-items: center; */
 }
 
 /* a{
