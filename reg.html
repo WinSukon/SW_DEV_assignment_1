@@ -5,33 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script></script>
+  <script src="register.js"></script>
 
   <title>reg is REG</title>
 </head>
 <body>
   <h1>Register</h1><br><br>
+  <form >
+    <label>Company name :</label>
+    <input type="text" id="name">
+    <div id="err_name"></div><br><br>
 
-  <label>Company name :</label>
-  <input type="text"><br><br>
+    <label>Booth size (foot) :</label>
+    <select id="sizes" >
+    <option ></option>
+    <option >10x10</option>
+    <option >10x15</option>
+    </select>
+    <div id="err_sizes"></div><br><br>
 
-  <label>Booth size (foot) :</label>
-  <select name="sizes" >
-  <option >10x10</option>
-  <option >10x15</option>
-  </select><br><br>
 
-  <label>Need a table ?</label>
-  <input type="checkbox"><br><br>
+    <label>Need a table ?</label>
+    <input type="checkbox"><br><br>
 
-  <label>Amount of chairs :</label>
-  <input type="number"><br><br>
+    <label>Amount of chairs :</label>
+    <input type="number" id="chair">
+    <div id="err_chair"></div><br><br>
 
-  <label>Contact name :</label>
-  <input type="text"><br><br>
 
-  <label>Contact number :</label>
-  <input type="number"><br><br>
-  <a href="index.html"><button>submit</button></a>
+    <label>Contact name :</label>
+    <input type="text" id="contact_name">
+    <div id="err_con_name"></div><br><br>
+
+
+    <label>Contact number :</label>
+    <input type="number" id="contact_num">
+    <div id="err_con_num"></div><br><br>
+
+    
+  </form>
+  <button onclick="onClickhandler()">submit</button>
+  <div id="isValid"></div>
+  
 </body>
 </html>
